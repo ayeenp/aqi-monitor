@@ -1,0 +1,8 @@
+{
+    "uuid": "aqi-monitor@ayeen",
+    "name": "AQI Monitor",
+    "description": "Displays Air Quality Index (AQI) in the GNOME toolbar",
+    "version": 1,
+    "shell-version": ["42"],
+    "url": "https://github.com/ayeenp/aqi-collector"
+}
