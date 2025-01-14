@@ -19,8 +19,8 @@ fi
 # Cron job to run after reboot
 REBOOT_CRON_JOB="@reboot sleep 5; $PYTHON_PATH $SCRIPT_PATH"
 
-# Cron job to run every 2 minutes
-TWO_MINUTES_CRON_JOB="*/2 * * * * $PYTHON_PATH $SCRIPT_PATH"
+# Cron job to run every 3 minutes
+CRON_JOB="*/3 * * * * $PYTHON_PATH $SCRIPT_PATH"
 
 # Add the cron jobs if they aren't already present
 (crontab -l 2>/dev/null | grep -Fx "$REBOOT_CRON_JOB") || (crontab -l 2>/dev/null; echo "$REBOOT_CRON_JOB") | crontab -
